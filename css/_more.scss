@@ -1,0 +1,133 @@
+.more{
+  >#wrap{
+    overflow-x: hidden;
+    >section{
+      >.wallet{
+        display: grid;
+        height: 200px;
+        color: #2e373c;
+        background-color: #f1de31;
+        >.wallet_header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          >h2{
+            margin: 20px 35px;
+            font-weight: 500;
+            font-size: 26px;
+          }
+          >.icons{
+            display: flex;
+            align-items: center;
+
+            >i{
+              margin: 0 10px;
+              font-weight: 550;
+              font-size: 18px;
+
+              &:last-child{
+                margin-right: 25px;
+              }
+            }//i
+          }//.icons
+        }//.wallet_header
+
+        >.money{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          i{
+            margin: 18px 0 20px 40px;
+            font-size: 22px;
+          }
+          span{
+            margin: 17px 40px 15px 20px;
+            font-size: 22px;
+            font-weight: 600;
+          }
+        }//.money
+
+        >.wallet_footer{
+
+          >.payment{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            >.pay{
+              display: flex;
+              margin: 10px 0 10px 30px;
+              >p{
+                margin-right: 20px;
+                padding-right: 20px;
+                font-weight: 450;
+                font-size: 15px;
+                border-right: 1px solid #838181;
+
+                &:first-child{
+                  margin-left: 10px;
+                }
+
+                &:last-child{
+                  border: 0px solid #000;
+                }
+            }//p
+          }//.pay
+            >i{
+              margin-right: 40px;
+            }
+          }//.payment
+        }//.wallet_footer
+      }//.wallet
+
+      >.service{
+        display: grid;
+        gap: 30px;
+        >h2{
+          margin-top: 35px;
+          margin-left: 20px;
+          color: #2e373c;
+          }
+          >ul{
+            display: flex;
+          justify-content: center;
+          align-items: center;
+
+          >li{
+            position: relative;
+            margin: 0px 50px 10px 60px;
+
+            &::before{
+              content: '';
+              position: absolute;
+              top: -10px;
+              bottom: -10px;
+              left: -30px;
+              right: -30px;
+              z-index: -100;
+            }
+
+            &:hover::before,&:active::before{
+              background-color: #eee;
+            }
+
+            >i{
+              margin: 0 10px;
+              font-size: 38px;
+              color: #2e373c;
+            }
+            >.tag{
+              display: block;
+              text-align: center;
+              margin-top: 10px;
+              font-weight: 500;
+              font-size: 15px;
+              color: #2e373c;
+            }
+          }//li
+        }//ul
+      }//.service
+    } //section
+  }//wrap
+}//.more

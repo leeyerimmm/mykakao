@@ -1,0 +1,178 @@
+.board_game {
+  > #wrap {
+    > section {
+
+      p{
+          margin-left: 10px;
+          font-weight: 350;
+          font-size: 16px;
+          color: #2e373c;
+      }
+
+      > h2 {
+        margin: 15px 0 20px 15px;
+        font-weight: 500;
+        font-size: 24px;
+        color: #2e373c;
+      } // h2
+
+      > ul.chat-list {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+
+        > li {
+          padding: 10px 0;
+          &:hover,&:active {
+            background-color: #fdf8c5;
+          }
+          > a {
+            position: relative;
+            > .friend {
+              display: flex;
+              align-items: center;
+
+              > .talk {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3px;
+                max-width: 80px;
+                margin: 0 10px 0 18px;
+
+                > img {
+                  width: 35px;
+                  height: 35px;
+                  background-size: cover;
+                  border-radius: 35%;
+                }
+              } // talk
+
+              > img {
+                width: 75px;
+                height: 75px;
+                margin: 0 10px 0 20px;
+                background-size: cover;
+                border-radius: 35%;
+              }
+
+              > .chat {
+                > h3 {
+                  margin-left: 10px;
+                  margin-bottom: 10px;
+                  font-weight: 500;
+                  font-size: 18px;
+                  color: #2e373c;
+                }
+
+                > .chattime {
+                  position: absolute;
+                  right: 0;
+                  top: 18%;
+                  margin-right: 20px;
+                  font-size: 14px;
+                  color: #2e373c;
+                }
+              } // .chat
+            } // .friend
+          } // a
+        } // li
+      } // .chat-list
+
+      ul.friend-list {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+      
+        > li {
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+      
+          &:hover,&:active {
+            background-color: #eee;
+          }
+      
+          > .friend {
+            display: flex;
+            align-items: center;
+            width: 100%;
+      
+            > a {
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              flex-grow: 1;
+      
+              > img {
+                width: 75px;
+                height: 75px;
+                margin: 0 10px 0 20px;
+                background-size: cover;
+                border-radius: 35%;
+              }
+      
+              > .chat {
+                display: flex;
+                flex-direction: column;
+      
+                > h3 {
+                  margin-left: 10px;
+                  margin-bottom: 10px;
+                  font-weight: 500;
+                  font-size: 18px;
+                  color: #2e373c;
+                }
+      
+                > .textbutton {
+                  display: flex;
+                  align-items: center;
+      
+                  > p {
+                    margin-left: 10px;
+                    font-weight: 350;
+                    font-size: 16px;
+                    color: #2e373c;
+                    white-space: nowrap;
+                  }
+                }
+              } // .chat
+            } // a
+      
+            > button {
+              margin-left: 10px;
+              padding: 6px 5px;
+              font-size: 12px;
+              font-weight: 500;
+              color: #666;
+              border: 1px solid yellowgreen;
+              border-radius: 20px;
+              background-color: #fff;
+              display: flex;
+              align-items: center;
+      
+              &:hover,
+              &:active {
+                background-color: #eff7db;
+                border-color: green;
+      
+                &::after {
+                  border-left: 7px solid green;
+                }
+              }
+      
+              &::after {
+                content: "";
+                margin-left: 5px;
+                width: 0;
+                height: 0;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+                border-left: 7px solid yellowgreen;
+              }
+            } // button
+          } // .friend
+        } // li
+      } // .friend-list
+    } // section
+  } // #wrap
+} // .board_game

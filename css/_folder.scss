@@ -1,0 +1,36 @@
+.folder{
+  >#wrap{
+  >section{
+    margin-top: 20px;
+    >ul{
+      display: grid;
+      gap: 10px;
+      >li{
+        &:hover,&:active{
+          background-color: #fdf8c5;
+        }
+        >a{
+          display: flex;
+          flex-flow: row nowrap;
+          padding: 15px 0;
+
+        >i{
+          margin-left: 30px;
+          margin-right: 20px;
+          font-size: 50px;
+          color: #f1de31;
+        }
+
+        >h2{
+          padding-top: 7px;
+          font-weight: 500;
+          font-size: 24px;
+          color: #2e373c;
+        }
+      }//a
+      }//li
+    }//ul
+  }//section
+ }//#wrap
+
+}

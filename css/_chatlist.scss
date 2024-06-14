@@ -1,0 +1,108 @@
+.chatlist{
+ section {
+    > ul {
+        display: grid;
+        gap: 30px;
+        > li{
+
+            &:nth-child(1){
+                margin-top: 20px;
+            }
+
+            > a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    bottom: -10px;
+                    left: 0;
+                    right: 0;
+                    z-index: -100;
+                }
+
+                &:hover::before,&:active::before {
+                    background-color: #fdf8c5;
+                }
+
+                > .friend {
+
+                    > img {
+                        width: 70px;
+                        height: 70px;
+                        margin-left: 20px;
+                        margin-right: 10px;
+                        border-radius: 35%;
+                        object-fit: cover;
+                    } // img
+
+                    > .talk {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 3px;
+                        max-width: 80px;
+                        margin: 0 10px 0 18px; 
+
+                        > img {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 35%;
+                        }
+                    } // .talk
+
+                } // .friend
+
+                > .chat {
+                    display: flex;
+                    flex-direction: column;
+
+                    > h2 {
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #2e373c;
+                    }
+
+                    > p {
+                        margin-left: 10px;
+
+                        font-weight: 350;
+                        font-size: 16px;
+                        color: #2e373c;
+                        white-space: nowrap;
+                    }
+
+                    >.chattime{
+                        position: absolute;
+                        right: 0; 
+                        top: 25%;
+                        margin-right: 20px;
+                        font-size: 14px;
+                        color: #2e373c;
+
+                        >.alarm {
+                            position: absolute;
+                            top: 30px;
+                            right: 0px;
+                            background-color: #ff7a6b;
+                            color: #fff;
+                            border-radius: 50%;
+                            padding: 2px 7px;
+                            font-weight: 700;
+                          }
+
+                    }
+
+
+                } // .chat
+
+            } // a
+        } // li
+    } // ul
+} // section
+}//chatlist

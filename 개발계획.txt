@@ -1,0 +1,19 @@
+1. 개발범위(페이지) 선정 및 파일명
+
+friends(첫장)
+chatlist -> index.html
+
+setting(설정)
+info
+search
+
+talk1
+talk2
+talk3
+talk4
+
+2. 각 페이지별 스케치(시안) -> 구성요소 확장
+
+3. 필요한 리소스 수집 -> 이미지, 영상, 글
+
+4. 코딩작업

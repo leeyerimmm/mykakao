@@ -1,0 +1,240 @@
+.friends{
+    section{
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: 1fr;
+    gap: 15px 0;
+
+ 
+    >.myProfile{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: 13px 0 20px;
+
+
+    >h2{
+      position: relative;
+      padding-left: 110px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #2e373c;
+
+      &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80px;
+        height: 80px;
+        margin-left: 18px;
+        background-image: url(./../images/LYR.jpg);
+        background-size: cover;
+        border-radius: 35%;
+      }
+    }//h2
+  
+    >p{
+      display: block;
+      margin-top: 5px;
+      margin-left: 110px;
+      font-weight: 350;
+      font-size: 16px;
+      color: #2e373c;
+    }
+    >button{
+      position: absolute;
+      top: 20px;
+      right: 0;
+      display: inline-block;
+      margin-right: 20px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #666;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: #fff;
+
+      &:hover,
+      :active {
+        background-color: #e5e5e5;
+        border-color: #bbb;
+        }
+      }//button
+    }//myProfile
+ 
+
+    >.friendBirth{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 10px;
+      border-top: 1px solid #ececed;
+
+  
+      >h3{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-weight: 500;
+        color: #666;
+        }
+
+       >.birth{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+       
+
+        >img{
+          width: 60px;
+          height: 60px;
+          margin-left: 15px;
+          border-radius: 10px;
+        }
+       } //.birth
+
+       p{
+        font-weight: 400;
+        font-size: 18px;
+        color: #2e373c;
+        white-space: nowrap;
+       }
+
+       span{
+        font-size: 16px;
+        margin-left: 110px;
+        white-space: nowrap;
+       }
+      
+    }//friendBirth
+
+    >.buddy {
+      gap: 10px;
+      margin-left: 10px;
+      padding-bottom: 40px;
+      border-top: 1px solid #ececed;
+    
+      h3 {
+        margin: 10px 0 10px 10px;
+        font-weight: 500;
+        color: #666;
+      }
+    
+      > .buddy-list {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    
+        > img {
+          width: 60px;
+          height: 60px;
+          margin-left: 15px;
+          margin-right: 20px;
+          border-radius: 35%;
+          // object-fit: cover;
+        }
+    
+        .buddyText {
+          display: flex;
+          flex-direction: column;
+    
+          h4 {
+            margin-bottom: 3px;
+            font-weight: 400;
+            font-size: 18px;
+            color: #2e373c;
+          }
+    
+          p {
+            font-weight: 350;
+            font-size: 14px;
+            color: #2e373c;
+            white-space: nowrap;
+          }
+    
+          .textbutton {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+    
+            > button {
+              margin-left: 110px;
+              padding: 6px 5px;
+              font-size: 12px;
+              font-weight: 500;
+              color: #666;
+              border: 1px solid yellowgreen;
+              border-radius: 20px;
+              background-color: #fff;
+              display: flex;
+              align-items: center;
+
+              &:hover,
+              &:active {
+                background-color: #eff7db;
+                border-color: green;
+              }
+    
+              &:hover::after,
+              &:active::after {
+                border-left: 7px solid green;
+              }
+    
+              &::after {
+                content: "";
+                margin-left: 5px;
+                width: 0;
+                height: 0;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+                border-left: 7px solid yellowgreen;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .recommend{
+      gap: 10px;
+      border-top: 1px solid #ececed;
+      >h3{
+        margin: 15px 0 10px 20px;
+        font-weight: 500;
+        color: #666;
+      }
+      .newfriend{
+        display: flex;
+        flex-flow: row nowrap;
+    i{
+      margin-bottom: 10px;
+      margin-left: 25px;
+      font-size: 60px;
+      color: #d7bde3;
+    }
+    p{
+      margin-left: 20px;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 18px;
+      color: #2e373c;
+      white-space: nowrap;
+    }
+
+    span{
+      margin-top: 10px;
+      margin-left: 135px;
+      font-size: 16px;
+      color: #2e373c;;
+      white-space: nowrap;
+
+    }
+  }//.newfriend
+  }//.recommend
+  }//section
+  
+
+}
