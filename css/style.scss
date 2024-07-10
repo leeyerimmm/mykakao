@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "./reset.css";
-@import "_friends", "_chatlist", "_talk1", "_talk2", "_talk3", "_talk4", "_folder", "_fullstack", "_boardgame", "_more";
+@import "_friends", "_chatlist","_folder", "_more", "_fullstack_talk","_moon_talk", "_boardgame_talk","_kim_talk","fullstack_folder","_boardgame_folder";
 
 
 body {
@@ -33,13 +33,14 @@ body {
     background-color: white;
     display: block;
     height: auto;
+    width: 100%;
   }
 
   #wrap {
     display: block;
     width: 100%;
     margin: 0 auto;
-    min-height: 100%;
+    min-height: 100vh;
     padding-bottom: 60px;
     box-sizing: border-box;
 
@@ -184,6 +185,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   #wrap {
