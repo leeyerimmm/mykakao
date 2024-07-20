@@ -19,3 +19,8 @@ function init(){
 }
 
 init();
+
+
+function goBack() {
+  window.location.href = './fullstack_folder.html';
+}
